@@ -1,0 +1,9 @@
+.portafolio-section{
+    background-color: #12202B;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5rem;
+    gap:8rem;
+    color: white;
+    }
