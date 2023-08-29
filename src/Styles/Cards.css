@@ -21,8 +21,9 @@ body {
 
 .card {
     color: var(--clr-neutral-100);
-    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2020/09/ea-featured-image-ea-desktop-beta.jpg.adapt.crop191x100.1200w.jpg);
-    background-size: cover;
+    background-image: url("../imagenes/Dezzer.JPG");
+    background-size:cover;
+    background-position: center;
     padding: 10rem 0 0;
     max-width: 35ch;
     border-radius: 0.5rem;
