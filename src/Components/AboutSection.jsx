@@ -5,7 +5,7 @@ import Skills from './Skills'
 
 function AboutSection() {
     return (
-        <div className='about-section'>
+        <div className='about-section'id='about'>
             <Description/>
             <Skills/>
         </div>

@@ -54,6 +54,7 @@ export default Skills
 const SkillsContainer = styled.div`
     .container{
         display: flex;
+        flex-wrap:wrap;
         
     }
 
@@ -70,6 +71,7 @@ const SkillsContainer = styled.div`
 
     .tec-container{
         display: flex;
+        flex-wrap: wrap;
         gap: 1rem
         
     }
@@ -77,9 +79,9 @@ const SkillsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4rem;
-    width: 4.1rem;
-    height: 4.1rem;
+    font-size: 5rem;
+    width: 5.1rem;
+    height: 5.1rem;
     margin: 10px;
     background-color: transparent;
     border-radius: 0 0 5px 5px;
@@ -132,4 +134,7 @@ const SkillsContainer = styled.div`
         border-top: none;
     }
 
+    .exp-education{
+        font-size: 1.4vw;
+    }
 `

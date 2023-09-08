@@ -3,7 +3,7 @@ import './App.css';
 import AboutSection from './Components/AboutSection';
 import HeroSection from './Components/HeroSection';
 import NavBar from './Components/NavBar';
-import PortafolioSection from './Components/PortafolioSection';
+import ProjectSection from './Components/ProjectSection';
 
 export default function App() {
   return (
@@ -11,7 +11,7 @@ export default function App() {
     <NavBar/>
     <HeroSection/>
     <AboutSection/>
-    <PortafolioSection/>
+    <ProjectSection/>
     </>
   )
 }

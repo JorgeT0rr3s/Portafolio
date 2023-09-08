@@ -6,31 +6,37 @@ import MenuBurger from "./MenuBurger";
 
 export default function NavBar() {
     const [clicked, setClicked] = useState(false);
-    const handleClick = () => {
-        //setClicked has de opposite state of clicked
-        setClicked(!clicked)
+
+    const handleClick = (e) => {
+        // Verificar si el clic se produjo dentro del menú y cerrar solo en ese caso
+        if (e.target.classList.contains("menu-item")) {
+            setClicked(false);
+        }
+        // Otras acciones que deseas realizar cuando se hace clic en un elemento del menú
     }
 
     return (
         <>
             <NavContainer>
-                <h2>logo</h2>
-                <div className={`links ${clicked ? 'active' : ''}`} >
-                    <a href="#">Inicio</a>
-                    <a href="#">Acerca de</a>
-                    <a href="#">Portafolio</a>
-                    <a href="#">Contactame</a>
+                <img src="./imagenes/LOGO.png" alt="logo" />
+                <div className={`links ${clicked ? 'active' : ''}`} onClick={handleClick}>
+                    <a href="#inicio" className="menu-item">Inicio</a>
+                    <a href="#about" className="menu-item">Acerca de</a>
+                    <a href="#proyectos" className="menu-item">Portafolio</a>
+                    <a href="#" className="menu-item">Contactame</a>
                 </div>
                 <div className="burger-button">
-                    <MenuBurger clicked={clicked} handleClick={handleClick} />
+                    <MenuBurger clicked={clicked} handleClick={() => setClicked(!clicked)} />
                 </div>
-                <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
+                <BgDiv className={`initial ${clicked ? ' active' : ''}`} onClick={handleClick}></BgDiv>
             </NavContainer>
         </>
     )
 }
 const NavContainer = styled.nav`
-    background-color: #12202B;
+    
+    background-color: #12162b;
+    border-bottom: solid 0.5px #03BDF8;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -75,6 +81,7 @@ const NavContainer = styled.nav`
     }
 
     .links.active{
+    z-index: 2;
     width: 100%;
     display: block;
     position: absolute;
@@ -99,7 +106,7 @@ const BgDiv = styled.div`
     left: -1000px;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 1;
     transition: all .6s ease ;
     &.active{
     border-radius: 0 0 60% 0;
@@ -108,4 +115,5 @@ const BgDiv = styled.div`
     width: 100%;
     height: 100%;
     }
+    
 `

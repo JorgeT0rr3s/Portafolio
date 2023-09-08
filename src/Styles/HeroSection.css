@@ -1,13 +1,15 @@
 .hero-section{
-    background-color: #12202B;
+    background-color:   #12162b;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 5rem;
+    padding: 6rem;
     gap:8rem;
     color: white;
 }
 .hero-section h1{
     color: #03BDF8;
-    line-height: 0;
+    margin: 0;
+    padding: 0;
+    
 }

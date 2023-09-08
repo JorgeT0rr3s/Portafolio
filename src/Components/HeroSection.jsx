@@ -6,7 +6,7 @@ import '../Styles/HeroSection.css'
 
 function HeroSection() {
     return (
-        <div className='hero-section'>
+        <div className='hero-section' id='inicio'>
             <Welcome />
             <Photo />
         </div>

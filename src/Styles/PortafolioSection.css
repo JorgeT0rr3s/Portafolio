@@ -1,9 +1,17 @@
 .portafolio-section{
-    background-color: #12202B;
+    background-color: #12162b;
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
     padding: 5rem;
     gap:8rem;
     color: white;
     }
+    .cards-container{
+        display: grid;
+        place-items: center;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem),1fr));
+    }
+   

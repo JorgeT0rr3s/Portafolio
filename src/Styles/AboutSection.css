@@ -1,9 +1,15 @@
 
 .about-section{
-    background-color: #213747;
+    background-color: #09143d;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 5rem;
     gap:8rem;
+}
+
+@media (max-width: 768px) {
+    .about-section{
+        gap:3rem
+    }
 }
