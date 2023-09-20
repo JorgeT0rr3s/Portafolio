@@ -9,19 +9,19 @@ export default function Welcome1() {
     return (
 
         <WelcomeConainer>
-            <h6>Hola, soy Jorge</h6>
-            <h1>Desarrollador Front End</h1>
+            <h6 >Hola, soy Jorge</h6>
+            <h1 className='title-dev'>Desarrollador Front End</h1>
             <h6 className='bold-text'>Bienvenido a mi portafolio.</h6>
             <div className='buttons-container'>
-            <a href="#" className="btnfos-5 button " >
-                        Curriculum
-                        <MdContactPage style={{ marginLeft: '8px' }} />
-                    </a>
+                <a href="#" className="btnfos-5 button " >
+                    Curriculum
+                    <MdContactPage style={{ marginLeft: '8px' }} />
+                </a>
 
-                    <a href="#" className=" button button2"  >
-                        Proyectos
-                        <AiFillProject style={{ marginLeft: '8px' }} />
-                    </a>
+                <a href="#proyectos" className=" button button2"  >
+                    Proyectos
+                    <AiFillProject style={{ marginLeft: '8px' }} />
+                </a>
             </div>
         </WelcomeConainer>
     )
@@ -51,7 +51,7 @@ h6{
     font-size: 2rem;
     margin: 0;
 }
-h1{
+.title-dev{
     font-size: 4rem;
 }
 .btnfos-5 {
@@ -74,5 +74,28 @@ h1{
     outline-offset: 15px;
     outline-color: rgba(255, 255, 255, 0);
     text-shadow: 1px 1px 2px #427388;
+  }
+  @media (max-width: 538px){
+    .title-dev{
+        font-size: 2rem;
+    }
+    h6{
+        font-size: 1rem;
+    }
+    .buttons-container {
+    display: flex;
+    gap: 1rem;
+    }
+    .button{
+    width: 90px;
+    height: 20px;
+    margin: 10px ;
+    border-radius: 5px;
+    padding:0.5rem ;
+    text-decoration: none;
+    font-size: 0.8rem;
+    
+
+    }
   }
 `

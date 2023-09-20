@@ -41,11 +41,12 @@ const NavContainer = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4rem;
+    padding: 0.8rem 4rem;
     div a {
     text-decoration: none;
     color: white;
     margin-right: 2rem;
+    font-size: 1.2vw;
     }
     .burger-button{
     @media (min-width: 768px){
